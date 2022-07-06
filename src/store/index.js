@@ -1,4 +1,7 @@
 import { createStore } from 'vuex'
+import charactersModule from '@/store/modules/charactersModule'
+import preloaderModule from '@/store/modules/preloaderModule'
+import episodesModule from '@/store/modules/episodesModule'
 
 export default createStore({
   state: {
@@ -10,5 +13,8 @@ export default createStore({
   actions: {
   },
   modules: {
+    charactersModule,
+    preloaderModule,
+    episodesModule
   }
 })
